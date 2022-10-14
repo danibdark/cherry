@@ -2,9 +2,9 @@
  require("vista/cabecera.php");
  ?>
 <?php
-       $conexion = mysqli_connect("localhost", "root", "", "467698") or
-        die("Problemas con la conexión");
-    
+      $conexion = mysqli_connect("bwsnuoyf8gs8ksyrd9h3-mysql.services.clever-cloud.com", "uzyix51oxo4bxoep", "NnoXgGmKvWSD4MmIvGK8", "bwsnuoyf8gs8ksyrd9h3") or
+      die("Problemas con la conexión");
+  
       mysqli_query($conexion, "insert into banco(nombre,apellido, tipoident, numid, telefono, direccion, email) values 
         ('$_REQUEST[nombre]','$_REQUEST[apellido]','$_REQUEST[tipoident]',$_REQUEST[numid],$_REQUEST[telefono],'$_REQUEST[direccion]','$_REQUEST[email]')")
         or die("Problemas en el select" . mysqli_error($conexion));
@@ -19,8 +19,9 @@
  
 <?php
 
-  $conexion = mysqli_connect("localhost", "root", "", "467698") or
-    die("Problemas con la conexión");
+$conexion = mysqli_connect("bwsnuoyf8gs8ksyrd9h3-mysql.services.clever-cloud.com", "uzyix51oxo4bxoep", "NnoXgGmKvWSD4MmIvGK8", "bwsnuoyf8gs8ksyrd9h3") or
+die("Problemas con la conexión");
+
 
   $registros = mysqli_query($conexion, "select * from banco") or
     die("Problemas en el select:" . mysqli_error($conexion));  ?>

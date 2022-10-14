@@ -8,8 +8,9 @@
  <br>
  <button type="button" class="btn btn" data-toggle="modal" data-target="#myModal" i class="fa-solid fa-file-circle-plus" style=" background-color:#a72833; color:white;" ></i >registrar</button>
  <?php
-  $conexion = mysqli_connect("localhost", "root", "", "467698") or
-    die("Problemas con la conexión");
+  $conexion = mysqli_connect("bwsnuoyf8gs8ksyrd9h3-mysql.services.clever-cloud.com", "uzyix51oxo4bxoep", "NnoXgGmKvWSD4MmIvGK8", "bwsnuoyf8gs8ksyrd9h3") or
+  die("Problemas con la conexión");
+
 
   $registros = mysqli_query($conexion, "select * from banco") or
     die("Problemas en el select:" . mysqli_error($conexion));  ?>
