@@ -2,7 +2,7 @@
  require("vista/cabecera.php");
  ?>
 <?php
-  $conexion = mysqli_connect("localhost", "root", "", "467698") or
+  $conexion = mysqli_connect("bwsnuoyf8gs8ksyrd9h3-mysql.services.clever-cloud.com", "uzyix51oxo4bxoep", "NnoXgGmKvWSD4MmIvGK8", "bwsnuoyf8gs8ksyrd9h3") or
     die("Problemas con la conexión");
 
   $registros = mysqli_query($conexion, "select id from banco
